@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>INDIA</title>
+
+<!-- Meta Tags -->
+<meta charset="utf-8" />
+<meta name="description"
+	content="This page is about an enquiry or a Form. " />
+<meta name="keywords"
+	content="E-Mail, contact address, Form " />
+<meta name="author" content="Anita Samal" />
+
+<!-- Include CSS files -->
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/site.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/grid.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/rwd.css" />
+
+<!-- Include JS files -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/site.js"></script>
+
+
+</head>
+<body>
+
+	<div class="page_container">
+
+		<!--India -->
+		<header>
+			<img src="image/header/india.jpg" alt="India" id="hdr_logo_left" /> <img
+				src="image/header/namate.jpg" alt="India" id="hdr_logo_right" />
+			<div id="hdr_txt_large">INDIA</div>
+			<div id="hdr_txt_small">Far From Ordinary</div>
+		</header>
+
+
+
+		<!-- MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ START -->
+		<nav>
+			<ul id="menu">
+
+				<!-- HOME -->
+				<li class="nav_first"><a href="index.html">HOME</a></li>
+
+				<!-- GEOGRAPHY -->
+				<li><a href="geography.html">GEOGRAPHY</a></li>
+
+				<!-- LANGUAGE -->
+				<li><a href="language.html">LANGUAGE</a></li>
+
+				<!--CULTURE -->
+				<li><a href="culture.html">CULTURE</a></li>
+				
+				<!--FESTIVALS-->
+				<li><a href="festival.html">FESTIVALS</a></li>
+
+
+
+				<!-- HISTORY -->
+				<li><a href="history.html">HISTORY</a>
+					<ul>
+						<li><a href="history.html">History</a></li>
+						<li><a href="ancient-history.html">Ancient History</a></li>
+						<li><a href="modern-history.html">Modern History</a></li>
+					</ul></li>
+				<!--FAQ-->
+				<li><a href="faq.html">FAQ</a></li>
+				
+					
+				<!--SITEMAP-->
+				<li><a href="sitemap.html">SITEMAP</a></li>
+				
+				<!-- CONTACT US -->
+				<li class="nav_last"><a href="contact.html">CONTACT</a></li>
+
+
+			</ul>
+		</nav>
+		<!-- MENU ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ END -->
+
+		<section class="grid-cols-12">
+<div class="NB">
+<h1>Contact</h1>
+
+
+<p>Please send an email if you have any query and we will get back to you.</p>
+</div>
+</section>
+<div class="grid-cols-12 force-new-grid-row">&nbsp;</div>
+
+<section class="grid-cols-7">
+<div class="NB">
+<h2>Send an E-mail</h2>
+<p>Please complete and submit the form below.
+</p>
+
+<form id="frm_example" method="post" action="contact.php">
+
+
+<!-- HIDDEN FIELDS-->
+<input type="hidden" name="HDN_EMAIL" id="hdn_email" value="anitasamal2000@gmail.com" />
+
+<input type="hidden" name="HDN_CONFIRMATION_URL" id="hdn_confirmation_url" value="contact-confirmation.html" />
+
+
+
+
+<!-- Your Name -->
+<p class="form_element">
+<label>What is your name?</label><br/>
+<input type="text" name="YOUR_NAME" id="your_name" value="" size="50" maxlength="20" placeholder="Your Name" />
+</p>
+
+<p class="form_element">
+<label>What is your e-mail address?</label><br/>
+<input type="text" name="YOUR_EMAIL" id="your_email" value="" size="50" maxlength="50" placeholder="Your e-mail address" />
+</p>
+
+<p class="form_element">
+<label>What is your Telephone Number?</label><br/>
+<input type="text" name="YOUR_PHONE" id="your_phone" value="" size="50" maxlength="50" placeholder="Your telephone number" />
+</p>
+
+
+<!-- Radio Button -->
+
+<p class="form_element">
+<label>Have you ever visit India?</label><br />
+<input type="radio" name="BEEN_TO_INDIA" id="been_to_india_no" value="No"  />
+<label for="been_to_india_no">No</label>
+
+<input type="radio" name="BEEN_TO_INDIA" id="been_to_india_yes" value="Yes"  />
+<label for="been_to_india_yes">Yes</label>
+
+</p>
+
+<!-- Check Boxes -->
+
+<p class="form_element">
+<label>What interests you about India? </label><br />
+<input type="checkbox" name="INDIA_INTERESTS[]" id="india_geography" value="Geography" />
+<label for="india_geography">Geography</label>
+
+<input type="checkbox" name="INDIA_INTERESTS[]" id="india_language" value="Language" />
+<label for="india_language">Language</label>
+
+<input type="checkbox" name="INDIA_INTERESTS[]" id="india_culture" value="Culture" />
+<label for="india_culture">Culture</label>
+
+<input type="checkbox" name="INDIA_INTERESTS[]" id="india_festivals" value="Festivals" />
+<label for="india_festivals">Festivals</label>
+
+<input type="checkbox" name="INDIA_INTERESTS[]" id="india_history" value="History" />
+<label for="india_history">History</label>
+
+</p>
+
+
+
+<!-- Drop Down -->
+<p class="form_element">
+
+<label>How old are you?</label><br />
+<select name="AGE" id="age">
+	
+	<option value="">Select Your Age</option>
+	<option value="under18">Under 18</option>
+	<option value="18-65">18-65</option>
+	<option value="over65">Over 65</option>
+
+</select>
+</p>
+
+<!-- TEXTAREA -->
+<p class="form_element">
+
+<label>What would you like to do in India?</label><br />
+<textarea name="LIKE_TO_DO_IN_INDIA" id="like_to_do_in_india" placeholder="Like to do in India.">
+</textarea>
+
+<!-- SUBMIT BUTTON -->
+
+<p class="form_element">
+<input type="submit" id="button_submit" value="SUBMIT" />
+</p>
+
+
+
+</form>
+
+</div>
+</section>
+
+<section class="grid-cols-5">
+<div class="NB">
+<h2>Contact Details</h2>
+</div>
+<div>
+<h3>Address</h3>
+<p>
+2, Lakeland Court<br />
+Rhydypenau Road<br/>
+Cyncoed<br/>
+Cardiff<br/>
+CF23 6QE.<br/> &nbsp;<br/> &nbsp;
+</p>
+</div>
+<div>
+<h3>Telephone Number</h3>
+<p>0091-9711123110(Mobile)<br/> &nbsp; <br/> &nbsp;</p>
+
+</div>
+
+<div>
+<h3>E-mail</h3>
+<p>anitasamal2000@gmail.com<br/> &nbsp; <br/> &nbsp;</p>
+
+</div>
+
+
+</section>
+
+
+
+		
+	</div>
+	<!-- .page_container -->
+
+	<footer> &copy; Anita Samal</footer>
+
+</body>
+</html>
