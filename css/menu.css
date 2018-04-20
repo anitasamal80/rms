@@ -1,0 +1,107 @@
+/*
+CSS SELECTOR:
+div > p .. Selects all <p> elements where the immediate parent is a <div> element
+*/
+/*
+nav
+{
+	margin-top: 30px;
+	border:			02px green solid;
+}
+*/
+
+/* NAV CONTAINER */
+nav > ul
+{
+	border:			0px green solid;
+	height:			32px;
+	margin:			20px auto;
+	clear:			both;
+}
+
+
+/* PARENT/CHILD MENU LINKS COMMON ELEMENTS */
+nav ul a:link,
+nav ul a:visited,
+nav ul a:active
+{
+	color:				red; 
+	background-color: 	white; 
+	text-decoration:	none;
+	display:			block;
+	white-space:		nowrap;
+}
+
+
+/* PARENT MENU ELEMENTS */
+nav ul li 
+{
+	float:			left;
+	border:			1px red solid;
+	border-radius:	5px;
+	overflow:		hidden;
+	/* Change width between parents */
+	/* Increase/Decrease 2nd value to make the menu wider horizontally. */
+	margin:			0px 10px 0px 0px;
+}
+nav ul li.nav_first { margin-left:	3px; } /* Increasing this value will move the menu to the right */
+nav ul li.nav_last  { margin-right:	 0px; } /* Do NOT change this value of 0px */
+
+
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active
+{
+	font-size:		14px;
+	/* Change width of the parents */
+	/* Increase/Decrease 2nd value to make the menu wider horizontally. */
+	padding:		4px 22px;
+	border-radius:	4px;
+}
+nav ul li a:hover
+{
+	color:				white; 
+	background-color:	red;
+}
+
+
+
+/* CHILD MENU ELEMENTS (The drop-down part of the menu) */
+
+nav ul li ul
+{
+	position:		absolute;
+	border:			01px red solid;  /* Box around the drop-down */
+	width:			194px;			 /* CONTROLS WIDTH OF DROP-DOWN. 1/2. */
+	margin-left:	-1px;
+	display:		none;
+	z-index:		20;
+	border-radius:	5px;
+	overflow:		hidden;
+}
+
+nav ul li ul li
+{
+	position:		relative;
+	float:			left;
+	margin:			0px;
+	border:			0px black solid;
+	border-radius:	0px;
+	width:			192px;			/* CONTROLS WIDTH OF DROP-DOWN. 2/2. */
+}
+
+
+nav ul li ul li a:link,
+nav ul li ul li a:visited,
+nav ul li ul li a:active
+{
+	font-size:		12px;
+	/* Increase/Decrease 1st value to make the child menu item taller vertically. */
+	padding:		5px 24px;
+	text-align:		left;
+}
+nav ul li ul li a:hover
+{
+	color:				white; 
+	background-color:	red;
+}

@@ -1,0 +1,74 @@
+/*
+http://os.alfajango.com/easytabs/
+*/
+
+.etabs
+{
+	margin:				0; 
+	padding:			0;
+}
+
+.tab
+{
+	display:			inline-block; 
+	zoom:				1; 
+	*display:			inline; 
+	background:			transparent; 
+	border:				solid 1px #999; 
+	border:				solid 2px red; 
+	border-bottom:		none; 
+	border-radius:		10px 10px 0 0;
+}
+
+.tab a
+{
+	font-size:			14px; 
+	line-height:		2em; 
+	display:			block; 
+	padding:			0 10px; 
+	outline:			none; 
+	text-decoration:	none; 
+	border:				0px solid red; 
+	border-radius:		10px 10px 0 0;
+}
+
+.tab a:hover
+{
+	background-color:	red;
+	color:				white;
+	border-radius:		7px 7px 0 0;
+}
+
+.tab.active
+{
+	background:			#fff; 
+	position:			relative; 
+	/* To remove tab bottom line */
+	top:				1px;
+	/* padding-top:		1px; */
+}
+
+.tab a.active { /* font-weight: bold; */ }
+
+.tab-container .panel-container
+{
+	background:			#fff; 
+	border:				solid #666 1px; 
+	border:				red solid 2px; 
+	padding:			10px; 
+	border-radius:		0 4px 4px 4px;
+}
+
+.panel-container
+{
+	margin-bottom:		10px;
+	border:				red solid 2px; !important; 
+}
+
+.tab-container > div
+{
+	/* border:				solid #666 1px !important; */
+	border:				solid red 2px !important; 
+	padding:			0px 10px 10px 10px;
+	border-radius:		0px 10px 10px 10px;
+}

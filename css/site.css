@@ -1,0 +1,387 @@
+@charset "utf-8";
+/*
+Tells the browser to read the css file as UTF-8. 
+This is handy if the CSS contains unicode characters and not only ASCII.
+*/
+
+
+/* html  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+html
+{ 
+	overflow-y:		scroll;
+}
+
+
+
+/* body  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body
+{
+    color:          #ff4d4d;				 /* Font colour */
+	font-size:		16px;
+	line-height:	20px;
+    font-style:     normal;				/* normal or italic */
+	font-family:	"Verdana", "Helvetica", "Arial", "sans-serif", "HelveticaNeue";
+	padding:		10px 20px;			 /* Same as below. top/bottom right/left */
+	padding:		10px 20px 10px 20px; /* Same as above. top right bottom left */
+	-webkit-text-size-adjust:	none;	 /* Prevent the iPhone and iPad from inflating some fonts and not others */
+	
+	/* Background (Lesson Three) */
+	/*background-color:	yellow; */
+	background-image:	url(../img/header/fl.jpg);
+	/*background-size:	cover;
+	/* background-repeat:	no-repeat; */  /* no-repeat repeat-x repeat-y */
+	/* background-position:	10px 30px; */  /* See CSS for lists (ol and ul) for an example */
+}
+
+
+
+
+
+
+/* BELOW IS page_container CSS ADDED DURING LESSON FOUR. */
+/* page_container (Lesson Four) ~~~~~~~~~~~~~~ */
+div.page_container
+{
+	
+	border:				0px blue dotted;
+	border:				2px green solid;
+	border-radius:		20px;
+	width:				1090px;
+	width:				1105px;
+	margin:				0px auto;
+	overflow:			hidden;
+	background-color:	#ccff99;
+		/* Create left gutter for the grid */
+	padding-left:		15px;
+	/*background-image: url(../img/culture/cult.jpg);
+	background-repeat: repeat-x;*/
+}
+/*
+div.culture
+{
+	background-image:  url(../img/culture/cult.jpg);
+	/* background-repeat: repeat-x; */
+	/*background-size: cover;*/
+}
+*/
+
+/*
+header, nav, footer
+{
+	padding:		15px;
+	text-align:		center;
+	border:			0px blue dotted;
+	margin-left:	-15px;
+}
+*/
+
+
+
+/* h1-h6 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* CSS for the h1, h2 and h3 tags (note the comma) */
+h1, h2, h3
+{
+	/* All four margins on four lines of code */
+    margin-top:		15px;
+    margin-right:	0px;
+    margin-bottom:	10px;
+    margin-left:	0px;
+	/* All four margins on one line of code */
+    margin:			15px 0px 10px 0px;
+}
+h1
+{	
+    margin-top:		0px;	/* This will over-write the margin-top value of 15px set above.    */
+    margin-bottom:	20px;	/* This will over-write the margin-bottom value of 10px set above. */
+	margin-left:	10px;
+    color:			#cc0099;
+    font-size:		30px;
+}
+h2
+{
+    color:			#0066ff;
+    font-size:		25px;
+    margin:			13px 10px 10px 10px;
+}
+h3
+{
+    color:			#009933;
+    font-size:		20px;
+	margin:			5px 0px 0px 5px;
+}
+
+
+/* p ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+p
+{
+    border:			0px dotted purple;  /* solid, dotted, dashed */
+	margin:			10px;
+}
+
+
+
+
+/* HR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+hr 
+{
+	background-color:	blue;
+	border:				blue 1px solid;
+	height:				2px;
+}
+
+
+
+/* table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+table
+{
+    border:				1px solid black;
+	/*
+	border-collapse:	collapse; 
+	border-spacing:		0px;
+	*/
+}
+td, th
+{
+	padding:		4px 15px;
+	text-align:		left;
+	vertical-align:	top;
+	line-height:	17px;
+}
+th
+{
+	white-space:			nowrap;
+	color:					white;
+	border:					1px black solid;
+	border-width:			1px 0 1px 0;
+    background-color:		green;
+}
+td
+{
+	border:					1px black solid;
+	border-width:			1px 0 0 0;
+}
+tfoot
+{
+	font-weight:			bold;
+	background-color:		gray;
+	color:					white;
+}
+/* Using a CSS class */
+td.go_right
+{
+	text-align:				right;
+}
+
+/* Alternating row (odd/even) background colours */
+table tbody tr:nth-child(odd)	{ background-color: white ; }
+table tbody tr:nth-child(even) 	{ background-color: white;   }
+
+
+/* Links ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+a.text_link:link,
+a.text_link:visited,
+a.text_link:active
+{
+	color:					blue;
+	border:					1px transparent solid;
+	border-radius:			10px;		/* CSS3 for rounded corners */
+	text-decoration:		none;		/* Removes the line under the link */
+}
+a.text_link:hover
+{
+	color:					white;
+	border:					1px black solid;
+	background-color:		blue;
+}
+
+
+/* img class ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+img.bike
+{
+	border:	1px solid green;
+	width:  419px; 
+	height: 276px;
+}
+
+
+/* 
+ABOVE IS INTRODUCTORY CSS FROM LESSON TWO.
+BELOW IS MORE CSS ADDED DURING LESSON THREE.
+*/
+
+
+
+/* ol ul ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* <ol></ol> An ordered (numbered) list */
+ol.ol_general
+{
+	list-style-type:		decimal;	/* decimal, disc, circle, square, upper-roman, lower-alpha */
+	list-style-position:	outside;	/* inside or outside */
+	margin-left:			50px;
+	border:					0px black solid;
+}
+/* <ul></ul> An unordered (bullet points) list */
+ul.ul_general
+{
+	list-style-type:		none;
+	list-style-position:	outside;
+	margin-left:			25px;
+	border:					0px black solid;
+}
+ul.ul_general li
+{
+	margin-left:			0px;
+	padding:				4px 4px 4px 20px;
+	background-repeat:		no-repeat;
+	background-position:	0px 8px;  /* Left Top */
+	background-image:		url('../img/bullet.png'); /* The ../ takes us back one directory */
+	line-height:			16px;
+	border:					0px red solid;
+}
+
+
+/* A bold class that we can use with almost any tag */
+.B
+{
+	font-weight: bold;
+	color: brown;
+}
+
+
+
+/* Float ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+img.about_bike_1
+{
+	float:			left;
+	border:			black 1px solid;
+	margin:			5px 10px 10px 0px;
+	width:			240px;
+	height:			200px;
+}
+img.about_bike_2
+{
+	float:			right;
+	border:			black 1px solid;
+	margin:			5px 0px 10px 10px;
+	width:			240px;
+	height:			200px;
+}
+
+
+
+
+
+/* BELOW IS CSS ADDED DURING LESSON FOUR. */
+
+/* HOME PAGE */
+img.img_home_box
+{
+	width:		234px;
+	height:		130px;
+	margin:		15px auto 0px auto;
+	display:	block;
+	border:		transparent 1px solid;
+}
+section > a:hover img.img_home_box
+{	
+	border:				white 1px solid;
+}
+
+
+
+
+/* BELOW IS MORE CSS ADDED DURING LESSON FIVE. */
+
+
+/* HEADER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+header
+{
+	border:			0px black solid;
+	overflow:		hidden;
+	margin-left:	-15px;	/* Counters div#page_container { padding-left: 15px; } */
+	margin-bottom:	15px;
+	text-align:		center;
+}
+
+img#hdr_logo_left,
+img#hdr_logo_right
+{
+	width:  300px;
+	height:	240px;
+}
+img#hdr_logo_left
+{
+	float:			left;
+	border-radius:	10px;
+}
+img#hdr_logo_right
+{
+	float:	right;
+	border-radius:	20px 20px 20px 20px;
+}
+div#hdr_txt_large
+{
+	font-size:		140px;
+	line-height:	140px;
+	color:			#d1942e;
+	margin-top:		20px;
+	font-family:	"Helvetica", "HelveticaNeue", "Verdana", "Arial", "sans-serif";
+	text-align:		center;
+}
+div#hdr_txt_small
+{
+	font-size:		30px;
+	line-height:	30px;
+	margin-top:		10px;
+	text-align:		center;
+}
+
+/* IMAGES IN THE TABS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ LESSON 6 */
+img.cuisine
+{
+	float:		right;
+	width:		115px;
+	height:		115px;
+	border:		1px red solid;
+	margin:		0px 15px 10px 10px;
+}
+
+
+
+/* FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+footer
+{
+	clear:			both;
+	color:			black;
+	text-align:		center;
+	font-size:		9px;
+	line-height:	15px;
+	border:			0px dotted red;
+}
+
+/*div.city
+{
+	border-radius:	20px;
+}
+div.city img
+{
+	float:	right;
+	width:  115px;
+	height:	115px;
+	margin:	3px 15px 5px 10px;
+	border:	1px red solid;
+}
+*/
+
+iframe#ifr_youtube_india
+{
+	/* ORIG width="640" height="390" */
+	width:				506px; 
+	height:				308px;
+	border:				1px green solid;
+	margin:				0px 0px 10px 10px;
+	/*background-image:	url(img/loading_w16px.gif); */
+}
+
+

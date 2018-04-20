@@ -1,0 +1,27 @@
+/* 
+http://dimsemenov.com/plugins/magnific-popup 
+http://dimsemenov.com/plugins/magnific-popup/documentation.html
+*/
+div.popup-gallery
+{
+	border:				0px red dotted;
+	margin:				0px;
+}
+
+div.popup-gallery a 
+{
+	text-decoration:	none;
+}
+
+div.popup-gallery a img
+{
+	width:				90px;
+	height:				90px;
+	margin:				0px 0px 8px 8px;
+	border:				1px red solid;
+}
+
+div.popup-gallery a:focus
+{
+	border-width:		0px;
+}
