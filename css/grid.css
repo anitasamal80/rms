@@ -1,0 +1,67 @@
+
+/* GRID - COLUMNS */
+
+.grid-cols-1  { width:   90px; }
+.grid-cols-2  { width:  180px; }
+.grid-cols-3  { width:  270px; }
+.grid-cols-4  { width:  360px; }
+.grid-cols-5  { width:  450px; }
+.grid-cols-6  { width:  540px; }
+.grid-cols-7  { width:  630px; }
+.grid-cols-8  { width:  720px; }
+.grid-cols-9  { width:  810px; }
+.grid-cols-10 { width:  900px; }
+.grid-cols-11 { width:  990px; }
+.grid-cols-12 { width: 1080px; }
+
+
+/* GRID - SECTIONS CONTAINING <div> AND <a> TAGS */
+section
+{
+	float:			left;
+	border:			red 0px dotted; /* Set to 0px after testing */
+}
+section > div,
+section > a:link,
+section > a:visited,
+section > a:active
+{
+	border:			green 02px solid;
+	overflow:		hidden;
+	margin:			0px 10px 10px 0px;
+	border-radius:	20px;
+}
+section > div.NB,
+section > a.NB
+{
+	border:				red 0px solid;
+	background:			none; 
+	border-radius:		0px;
+}
+section > a:link,
+section > a:visited,
+section > a:active
+{
+	display:			block;
+	text-decoration:	none;
+	color:				brown;
+}
+section > a:hover
+{
+	/* background-color:	gray; */
+	background:			-webkit-linear-gradient(red, pink);	/* For Safari 5.1 to 6.0  */
+	background:			-o-linear-gradient(red, pink);		/* For Opera 11.1 to 12.0 */
+	background:			-moz-linear-gradient(red, pink);	/* For Firefox 3.6 to 15  */
+	background:			linear-gradient(red, pink);			/* Standard syntax        */
+	border-color:		red;
+	color:				white;
+	border-radius:		10px;
+}
+section > a:hover h2,
+section > a:hover h3
+{	
+	text-transform:		uppercase;
+	color:				white;
+}
+div.force-new-grid-row { float: none; clear: both; height: 0px; overflow: hidden; border: #000 0px solid; }
+

@@ -1,0 +1,19 @@
+
+/* COMPONENTS = FLEXSLIDER ~~~~~~~~~~~~~~~~~~ */
+/* 
+http://www.woothemes.com/flexslider/
+http://flexslider.woothemes.com/index.html
+https://github.com/woothemes/FlexSlider/wiki/FlexSlider-Properties
+*/ 
+div.flexslider
+{
+	border:			2px red solid;
+	margin-right:	10px;
+	margin-left:	10px;
+	background-color: beige;
+}
+
+div.flexslider ul.slides
+{
+	margin:			0px;
+}

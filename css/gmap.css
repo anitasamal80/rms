@@ -1,0 +1,79 @@
+
+/*
+The box that contains the Google map Lat/Lng values when click_map_shows_lat_lng is turned on temporarily,
+i.e. var click_map_shows_lat_lng = false;
+*/
+span#span_lat_lng_display
+{
+	color:			#000;
+	font-size:		16px;
+	line-height:	20px;
+    font-style:     normal;
+}
+
+/* The box that contains the Google map */
+div#gmap
+{
+	height:			425px;
+	border:			2px red solid;
+	margin:			10px 10px 15px 10px;
+	text-align:		center;
+	line-height:	normal;
+	border-radius:	5px;
+}
+
+/* All information pop-up windows */
+div#gmap p.gmap_info_window
+{
+	border:			01px transparent solid;
+	margin:			1px;
+	text-align:		left;
+	overflow:		hidden;
+}
+
+/* Images in all information pop-up windows */
+div#gmap p.gmap_info_window img
+{
+	float:		left;
+	border:		1px #3f4040 solid;
+	margin:		0 10px 0 0;
+}
+
+/* Information pop-up window for Tokyo */
+div#gmap p.gmap_info_window_tokyo
+{
+	width:			165px;
+}
+
+/* Image in the information pop-up window for Shinjuku */
+div#gmap p.gmap_info_window_tokyo img
+{
+	width:		90px;
+	height:		90px;
+}
+
+/* Information pop-up window for Kurashiki */
+div#gmap p.gmap_info_window_kurashiki
+{
+	width:			200px;
+}
+
+/* Image in the information pop-up window for Kurashiki */
+div#gmap p.gmap_info_window_kurashiki img
+{
+	width:		90px;
+	height:		90px;
+}
+
+/* Information pop-up window for Hiroshima */
+div#gmap p.gmap_info_window_hiroshima
+{
+	width:			200px;
+}
+
+/* Image in the information pop-up window for Hiroshima */
+div#gmap p.gmap_info_window_hiroshima img
+{
+	width:		90px;
+	height:		90px;
+}

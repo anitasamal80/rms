@@ -1,0 +1,43 @@
+/* COMPONENTS = ACCORDION ~~~~~~~~~~~~~~~~ */
+/* http://jqueryui.com/accordion */
+div#accordion
+{
+	margin:			6px 0px 10px 10px;
+	border:			1px dotted transparent;
+}
+div#accordion h3,
+div#accordion h3:active,
+div#accordion h3:visited
+{
+    color:				red;
+    font-size:			20px;
+	line-height:		20px;
+    padding:			5px 10px;
+	margin:				10px 0px 0px 0px;
+	background-color:	#f4f4f4;
+	border-color:		red;
+}
+div#accordion div
+{
+    padding:			10px 10px 0px 10px;
+	background-color:	#f4f4f4;
+}
+div#accordion div p
+{
+    margin:			0px 15px 10px 15px;
+	
+	/* Copied from <body> to over-write jquery-ui.min.css */
+    color:          gray;
+	font-size:		16px;
+	line-height:	20px;
+    font-style:     normal;
+	font-family:	"Verdana", "Helvetica", "Arial", "sans-serif", "HelveticaNeue";
+} 
+/* Currently open */
+div#accordion h3.ui-accordion-header-active,
+div#accordion h3.ui-accordion-header-active + div,
+div#accordion h3:hover
+{ 
+	background-color:	#ffffff;
+	border-color:		red;
+}
