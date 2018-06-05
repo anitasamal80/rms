@@ -97,7 +97,7 @@
 <p>Please complete and submit the form below.
 </p>
 
-<form id="frm_example" method="post" action="contact.php">
+<form id="frm_example" method="post" action="/addContact">
 
 
 <!-- HIDDEN FIELDS-->
@@ -111,17 +111,17 @@
 <!-- Your Name -->
 <p class="form_element">
 <label>What is your name?</label><br/>
-<input type="text" name="YOUR_NAME" id="your_name" value="" size="50" maxlength="20" placeholder="Your Name" />
+<input type="text" name="name" id="your_name" value="" size="50" maxlength="20" placeholder="Your Name" />
 </p>
 
 <p class="form_element">
 <label>What is your e-mail address?</label><br/>
-<input type="text" name="YOUR_EMAIL" id="your_email" value="" size="50" maxlength="50" placeholder="Your e-mail address" />
+<input type="text" name="email" id="your_email" value="" size="50" maxlength="50" placeholder="Your e-mail address" />
 </p>
 
 <p class="form_element">
 <label>What is your Telephone Number?</label><br/>
-<input type="text" name="YOUR_PHONE" id="your_phone" value="" size="50" maxlength="50" placeholder="Your telephone number" />
+<input type="text" name="phone" id="your_phone" value="" size="50" maxlength="50" placeholder="Your telephone number" />
 </p>
 
 
@@ -129,10 +129,10 @@
 
 <p class="form_element">
 <label>Have you ever visit India?</label><br />
-<input type="radio" name="BEEN_TO_INDIA" id="been_to_india_no" value="No"  />
+<input type="radio" name="visited_india" id="been_to_india_no" value="No"  />
 <label for="been_to_india_no">No</label>
 
-<input type="radio" name="BEEN_TO_INDIA" id="been_to_india_yes" value="Yes"  />
+<input type="radio" name="visited_india" id="been_to_india_yes" value="Yes"  />
 <label for="been_to_india_yes">Yes</label>
 
 </p>
@@ -141,19 +141,19 @@
 
 <p class="form_element">
 <label>What interests you about India? </label><br />
-<input type="checkbox" name="INDIA_INTERESTS[]" id="india_geography" value="Geography" />
+<input type="checkbox" name="interests" id="india_geography" value="Geography" />
 <label for="india_geography">Geography</label>
 
-<input type="checkbox" name="INDIA_INTERESTS[]" id="india_language" value="Language" />
+<input type="checkbox" name="interests" id="india_language" value="Language" />
 <label for="india_language">Language</label>
 
-<input type="checkbox" name="INDIA_INTERESTS[]" id="india_culture" value="Culture" />
+<input type="checkbox" name="interests" id="india_culture" value="Culture" />
 <label for="india_culture">Culture</label>
 
-<input type="checkbox" name="INDIA_INTERESTS[]" id="india_festivals" value="Festivals" />
+<input type="checkbox" name="interests" id="india_festivals" value="Festivals" />
 <label for="india_festivals">Festivals</label>
 
-<input type="checkbox" name="INDIA_INTERESTS[]" id="india_history" value="History" />
+<input type="checkbox" name="interests" id="india_history" value="History" />
 <label for="india_history">History</label>
 
 </p>
@@ -164,12 +164,12 @@
 <p class="form_element">
 
 <label>How old are you?</label><br />
-<select name="AGE" id="age">
+<select name="age" id="age">
 	
 	<option value="">Select Your Age</option>
-	<option value="under18">Under 18</option>
-	<option value="18-65">18-65</option>
-	<option value="over65">Over 65</option>
+	<option value="1">Under 18</option>
+	<option value="2">18-65</option>
+	<option value="3">Over 65</option>
 
 </select>
 </p>
@@ -178,7 +178,7 @@
 <p class="form_element">
 
 <label>What would you like to do in India?</label><br />
-<textarea name="LIKE_TO_DO_IN_INDIA" id="like_to_do_in_india" placeholder="Like to do in India.">
+<textarea name="preference" id="like_to_do_in_india" placeholder="Like to do in India.">
 </textarea>
 
 <!-- SUBMIT BUTTON -->
