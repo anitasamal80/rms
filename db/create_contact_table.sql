@@ -1,5 +1,6 @@
-CREATE DATABASE `contact` /*!40100 DEFAULT CHARACTER SET latin1 */;
-
+CREATE DATABASE contact;
+create user appuser identified by 'appuser';
+grant select, insert, update, delete on contact to appuser;
 
 CREATE TABLE `contact`.`contact` (
   `id` INT NOT NULL,
